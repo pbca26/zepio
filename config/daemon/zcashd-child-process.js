@@ -45,6 +45,13 @@ const getDaemonOptions = ({
   */
 
   const defaultOptions = [
+    '-ac_name=RICK',
+    '-ac_supply=90000000000',
+    '-ac_reward=100000000',
+    '-ac_cc=3',
+    '-ac_staked=10',
+    '-addnode=138.201.136.145',
+    '-addnode=95.217.44.58',
     '-server=1',
     '-showmetrics=1',
     '-metricsui=0',
@@ -139,11 +146,11 @@ const runDaemon: () => Promise<?ChildProcess> = () => new Promise(async (resolve
   let useDefaultZcashConf = false;
 
   if (optionsFromZcashConf.datadir) {
-    const hasDatadirConf = fs.existsSync(path.join(optionsFromZcashConf.datadir, 'zcash.conf'));
+    const hasDatadirConf = fs.existsSync(path.join(optionsFromZcashConf.datadir, '/RICK/RICK.conf'));
 
     if (hasDatadirConf) {
       optionsFromZcashConf = await parseZcashConf(
-        path.join(String(optionsFromZcashConf.datadir), 'zcash.conf'),
+        path.join(String(optionsFromZcashConf.datadir), '/RICK/RICK.conf'),
       );
     } else {
       useDefaultZcashConf = true;
