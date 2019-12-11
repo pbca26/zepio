@@ -17,14 +17,18 @@ const Wrapper = styled.div`
   background-color: ${props => props.theme.colors.background};
 `;
 
-const LogoWrapper = styled.div`
-  height: ${props => props.theme.headerHeight};
-  width: ${props => props.theme.sidebarWidth};
+/*
   background-image: linear-gradient(
     to right,
     ${props => props.theme.colors.sidebarLogoGradientBegin},
     ${props => props.theme.colors.sidebarLogoGradientEnd}
   );
+*/
+
+const LogoWrapper = styled.div`
+  height: ${props => props.theme.headerHeight};
+  width: ${props => props.theme.sidebarWidth};
+  background-image: linear-gradient(45deg, #0d4475, #00e0bf);
   margin-bottom: 20px;
 `;
 

@@ -7,7 +7,7 @@ import { Transition, animated } from 'react-spring';
 import CircleProgressComponent from 'react-circle';
 import { TextComponent } from './text';
 
-import zcashLogo from '../assets/images/zcash-simple-icon.svg';
+import zcashLogo from '../assets/images/kmd-icon.svg';
 
 const Wrapper = styled.div`
   width: 100vw;
