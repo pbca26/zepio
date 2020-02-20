@@ -146,7 +146,7 @@ class Component extends PureComponent<Props, State> {
     }
 
     const shieldedAddresses = addresses.filter(({ address }) => address.startsWith('z'));
-    const transparentAddresses = addresses.filter(({ address }) => address.startsWith('t'));
+    const transparentAddresses = addresses.filter(({ address }) => address.startsWith('R'));
 
     const seeMoreIcon = theme.mode === DARK ? MenuIconDark : MenuIconLight;
 
